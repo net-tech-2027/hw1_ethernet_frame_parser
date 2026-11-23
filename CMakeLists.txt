@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(net_course_hw_template
+project(net_course_hw_ethernet
     VERSION 1.0.0
-    DESCRIPTION "Шаблон домашнего задания по курсу сетевых технологий"
+    DESCRIPTION "Шаблон домашнего задания: разбор и сериализация Ethernet-кадра"
     # CXX включён ТОЛЬКО для компиляции тестов на GoogleTest.
     # Реализация задания — на чистом C.
     LANGUAGES C CXX)
@@ -27,7 +27,7 @@ endif()
 # в tests/ менять нельзя (защищено CI).
 # ---------------------------------------------------------------------------
 add_library(hw STATIC
-    src/mac.c
+    src/ethernet.c
     # Список источников фиксирует преподаватель (файл защищён CI).
     # Если студенту разрешены дополнительные .c файлы, добавьте их сюда заранее.
 )
@@ -55,7 +55,7 @@ if(BUILD_TESTING)
   endif()
 
   add_executable(hw_tests
-        tests/test_mac.cpp
+        tests/test_ethernet.cpp
     )
   target_compile_options(hw_tests PRIVATE
         $<$<COMPILE_LANGUAGE:CXX>:-Wall -Wextra -Wpedantic>
