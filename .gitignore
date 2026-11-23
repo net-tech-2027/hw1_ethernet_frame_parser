@@ -1,0 +1,13 @@
+# Каталоги сборки
+build/
+build-*/
+cmake-build-*/
+
+# Кэш редакторов/компиляторов
+.cache/
+compile_commands.json
+.vscode/
+.idea/
+
+# Системный мусор
+.DS_Store

@@ -1,0 +1,9 @@
+# CODEOWNERS: обязательные ревьюеры для защищённых частей шаблона.
+
+/include/          @net-tech-2027/Pr0meTheuSS
+/tests/            @net-tech-2027/Pr0meTheuSS
+/CMakeLists.txt    @net-tech-2027/Pr0meTheuSS
+/CMakePresets.json @net-tech-2027/Pr0meTheuSS
+/.github/          @net-tech-2027/Pr0meTheuSS
+/docs/             @net-tech-2027/Pr0meTheuSS
+/README.md         @net-tech-2027/Pr0meTheuSS
